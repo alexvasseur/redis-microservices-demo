@@ -29,6 +29,9 @@ $ mvn clean package
 
 $ docker-compose up --build
 
+# and to force only one container rebuild eg Vue.js frontend
+$ docker-compose up --build app-frontend
+
 ```
 
 Cleanup
