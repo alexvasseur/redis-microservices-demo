@@ -1,5 +1,25 @@
 version: '3.7'
+
+# re-use of Redis Insight preferences from a pre-created volume
+volumes:
+  ri:
+    name: redisinsight
+    external: true
+
 services:
+
+  ri:
+    image: redislabs/redisinsight
+    volumes:
+      - ri:/db
+    ports:
+      - "8001:8001"
+    networks:
+      - redis-microservices-network
+    depends_on:
+      - app-redis
+#    links:
+#      - redis:redis
 
   app-redis:
     # build:
