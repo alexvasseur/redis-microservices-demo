@@ -3,7 +3,7 @@
 
 <div style="margin-bottom:10px">
   <b-navbar toggleable="lg" type="dark" variant="dark" fixed="top" >
-    <b-navbar-brand style="margin-left:90px" to="/" > RMDb</b-navbar-brand>
+    <b-navbar-brand style="margin-left:90px" to="/" >&nbsp;&nbsp;RMDb&nbsp;&nbsp;&nbsp;&nbsp;</b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>

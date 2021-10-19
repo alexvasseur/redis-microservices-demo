@@ -18,13 +18,8 @@ services:
       - redis-microservices-network
     depends_on:
       - app-redis
-#    links:
-#      - redis:redis
 
   app-redis:
-    # build:
-    #   context: ./redis-server
-    #   dockerfile: Dockerfile
     image: redislabs/redismod:latest
     ports:
       - "6379:6379"
