@@ -22,6 +22,7 @@
         <module>streams-to-redisearch-service</module>
         <module>streams-to-redisgraph-service</module>
         <module>redis-om</module>
+        <module>redis-json</module>
     </modules>
 
     <properties>
