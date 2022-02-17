@@ -124,6 +124,22 @@ services:
       - app-redis
     restart: always
 
+#  app-redisom:
+#    build:
+#      context: ./redis-om
+#      dockerfile: Dockerfile
+#    ports:
+#      - "8090:8090"
+#    environment:
+#      - REDIS_HOST=app-redis
+#      - REDIS_PORT=6379
+#      - REDIS_PASSWORD=
+#    networks:
+#      - redis-microservices-network
+#    depends_on:
+#      - app-redis
+#    restart: always
+
   app-comments:
     build:
       context: ./comments-service

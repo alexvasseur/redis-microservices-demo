@@ -25,7 +25,7 @@ public class MoviesSchema {
                 .addTextField(TITLE, 5.0)
                 .addSortableTextField(PLOT, 1.0)
                 .addSortableTagField(GENRE, ",")
-                    .addSortableNumericField(RELEASE_YEAR)
+                .addSortableNumericField(RELEASE_YEAR)
                 .addSortableNumericField(RATING)
                 .addSortableNumericField(VOTES);
     }
