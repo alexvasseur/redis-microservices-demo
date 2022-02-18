@@ -1,17 +1,31 @@
+# Caching
+
+https://www.omdbapi.com/?apikey=72a28845&i=tt2015381
+
+http://localhost:8084/api/1.0/caching/ratings/tt2015381
+
 # Search query
+
+"FT.SEARCH" "ms:search:index:movies"        
+"@release_year:[1990 2010]   
+@genre:{Animation}"
+SORTBY "release_year" DESC
+LIMIT 6 2
 
 
 # Search microservice
 
-http://localhost:8085//api/1.0/search-service/search-with-pagination?q=jedi
+http://localhost:8085/api/1.0/search-service/search-with-pagination?q=jedi
 
-http://localhost:8085//api/1.0/search-service//stats/movies/all
+http://localhost:8085/api/1.0/search-service//stats/movies/all
 
 # JSON
 
 http://localhost:8091/api/1.0/redis-service-json/load
 
 http://localhost:8091/api/1.0/redis-service-json/movies/13
+
+# RedisOM
 
 http://localhost:8090/api/1.0/redisom-service/load
 
